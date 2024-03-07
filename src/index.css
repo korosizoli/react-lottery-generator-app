@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply font-sans bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-slate-100;
+	}
+
+	.container {
+		@apply py-8 mt-10;
+	}
+
+	.menuLink {
+		@apply py-2 px-4 rounded-full;
+	}
+
+	.lotE,
+	.lot5,
+	.lot6,
+	.lot7 {
+		@apply bg-none duration-200;
+	}
+
+	.lotE:hover,
+	.lotE.active, 
+  .lotEBall {
+		@apply bg-amber-400 text-slate-900
+	}
+
+  .lotEBall, 
+  .lot5Ball,
+  .lot6Ball,
+  .lot7Ball {
+    @apply h-[68px] w-[68px] flex justify-center items-center rounded-full text-[1.25rem]
+  }
+
+	.lot5:hover,
+	.lot5.active,
+  .lot5Ball {
+		@apply bg-green-600 text-slate-100;
+	}
+
+	.lot6:hover,
+	.lot6.active,
+  .lot6Ball {
+		@apply bg-red-600 text-slate-100;
+	}
+
+	.lot7:hover,
+	.lot7.active,
+  .lot7Ball {
+		@apply bg-blue-600 text-slate-100;
+	}
+
+  .buttonWrapper {
+    @apply flex justify-center mt-8
+  }
+}
